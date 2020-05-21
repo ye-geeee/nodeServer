@@ -9,7 +9,7 @@ class App extends Component {
     }
 
     callAPI() {
-        fetch("http://localhost:3001/")
+        fetch("http://localhost:3001/upload")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }));
     }
